@@ -55,5 +55,5 @@ if __name__ == '__main__':
     torch.cuda.manual_seed(SEED)
     torch.set_rng_state(torch.manual_seed(SEED).get_state())
 
-    trainer = er.trainer.get_trainer('th_amp_ddp')()
+    trainer = er.trainer.get_trainer('th_ddp')()
     trainer.run(after_construct_launcher_callbacks=[register_leviscd_evaluate_fn])
