@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-export CUDA_VISIBLE_DEVICES=0
-NUM_GPUS=1
+#export CUDA_VISIBLE_DEVICES=0
+NUM_GPUS=8
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 
 config_path='trainxView2.r50_farseg_changemixin_symmetry'
